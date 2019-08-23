@@ -60,7 +60,7 @@ img {
 
 .linea {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 hr {
@@ -84,6 +84,7 @@ hr {
     height: 200px;
     width: 300px;
     display: inline-block;
+    text-align: left;
 }
 
 .p2 {
