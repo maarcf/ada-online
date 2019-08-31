@@ -11,52 +11,72 @@ body {
 
 h1 {
     display: inline-block;
-    margin-left: 100px;
+    /*margin-left: 100px;
     margin-right: 400px;
-    margin-top: 20px;
+    margin-top: 20px;*/
+    position: absolute;
+    top: 15px;
+    left: 30px;
 }
 
 p {
     display: inline-block;
     margin-left: 30px;
     color: #fff;
+    
 }
 
 a { 
     text-decoration: none;
-    color: #fff;
+    color: #fff; 
+    padding: 10px;
+}
+a:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+ 
 }
 
 .header {
     height: 75px;
     background-color: #343a40;
+    position: fixed;
+    width: 100%;
+}
+.sub-header {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    
 }
 
 .main {
     background-color: #1abc9c;
-    padding-top: 50px;
+    padding-top: 180px;
     padding-bottom: 50px;
     text-align: center;
 }
 
-img {
+.img-perfil {
     width: 300px;
     padding-bottom: 20px;
 }
 
-.portfolio {
+.portfolio, .contact {
     background-color: #fff;
-    padding-top: 50px;
+    padding-top: 130px;
     padding-bottom: 50px;
     color: #343a40;
     text-align: center;
 }
 
-.primera-fila, .segunda-fila {
+.img-portfolio {
     display: inline-block;
-    height: 200px;
     width: 300px;
     margin: 0 20px 20px 20px;
+}
+.img-portfolio img {
+    width: 100%;
 }
 
 .linea {
@@ -72,17 +92,16 @@ hr {
 
 .about {
     background-color: #1abc9c;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 130px;
+    padding-bottom: 90px;
     text-align: center;
 }
 
-#about, #portfolio {
+#about, #portfolio, #contact {
     text-align: center;
 }
 
 .p1, .p2 {
-    height: 200px;
     width: 300px;
     display: inline-block;
     text-align: left;
@@ -91,5 +110,75 @@ hr {
 .p2 {
     vertical-align: top;
 }
+
+.download {
+    background-color: #1abc9c;
+    border: 2px solid #fff;
+    padding: 25px 30px 25px 70px;
+    margin-top: 30px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.download img {
+    width: 50px;
+    position: absolute;
+    left: 560px;
+    top: 1850px;
+}
+.download:hover {
+    background-color: #fff;
+    color: #343a40;
+    cursor: pointer;
+}
+
+.formulario {
+    width: 100%;
+    display: inline-block;
+}
+form {
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+}
+label {
+    display: inline-block;
+}
+#message, #phone, #email, #name  {
+    padding: 30px 10px;
+    width: 600px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #AFAFAF;
+    color: #212529;
+    outline: none;
+}
+
+
+#send {
+    margin-top: 20px;
+    padding: 25px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    border-radius: 5px;
+    padding: 10px;
+}
+#send:hover {
+    cursor: pointer;
+    background-color: #159a80;
+    border-color: #148f77;
+}
+.btn-send {
+    position: relative;
+    right: 270px;
+}
+
+
 
 
