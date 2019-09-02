@@ -213,6 +213,10 @@ h3 {
     zoom: 1.2;
 }
 
+#icons:hover {
+    background-color: #fff;
+}
+
 .sub-footer-2 {
     background-color: #1A252F;
     text-align: center;
