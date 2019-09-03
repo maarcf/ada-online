@@ -37,20 +37,31 @@ p {
  
 }
 
-.header {
+nav {
     height: 75px;
     background-color: #343a40;
     position: fixed;
     width: 100%;
 }
-.sub-header {
+.sub-nav {
     position: absolute;
     top: 25px;
     right: 30px;
-    
+}
+.hamburguesa {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
 }
 
-.main {
+.header {
     background-color: #1abc9c;
     padding-top: 180px;
     padding-bottom: 50px;
@@ -105,6 +116,7 @@ hr {
     width: 300px;
     display: inline-block;
     text-align: left;
+    padding-right: 20px;
 }
 
 .p2 {
@@ -125,7 +137,7 @@ hr {
     width: 50px;
     position: absolute;
     left: 560px;
-    top: 1850px;
+    top: 1955px;
 }
 .download:hover {
     background-color: #fff;
@@ -133,15 +145,11 @@ hr {
     cursor: pointer;
 }
 
-.formulario {
-    width: 100%;
-    display: inline-block;
-    padding-bottom: 40px;
-}
 form {
     width: 70%;
     display: inline-block;
     text-align: center;
+    padding-bottom: 40px;
 }
 label {
     display: inline-block;
@@ -190,12 +198,13 @@ label {
 .information{
     display: inline-block;
     width: 33%;
-    height: 200px;
+    height: 250px;
+    vertical-align: middle;
 }
 
 h3 {
     font-size: 25px;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .info {
@@ -206,7 +215,7 @@ h3 {
     border-radius: 50px;
     border: 1px solid #fff;
     width: 30px;
-    margin: 20px 5px;
+    margin: 0px 5px;
     padding: 10px;
 }
 .social-icons:hover {
@@ -228,6 +237,46 @@ h3 {
     padding: 18px 0;
 }
 
+/* ==== MEDIA QUERY ==== */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .sub-nav {
+        display: none;
+    }
+    .download img {
+        width: 50px;
+        position: absolute;
+        left: 170px;
+        top: 3030px;
+    }
+    .btn-send {
+        position: relative;
+        right: 160px;
+    }
+    .information{
+        display: inline;
+    }
+    h3 {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .info {
+        font-size: 14px;
+        padding-bottom: 25px;
+    }
+
+
+}
+
+@media (min-width: 601px){
+    .hamburguesa {
+        display: none;
+    }
+}
 
 
 
